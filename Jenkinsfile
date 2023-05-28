@@ -6,6 +6,7 @@ pipeline {
         {
             steps {
                 sh 'date'
+                sh 'pwd'
             }
         }
         stage('build')
