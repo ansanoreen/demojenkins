@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+         stage('timestamp')
+        {
+            steps {
+                sh 'date'
+            }
+        }
         stage('build')
         {
             steps {
