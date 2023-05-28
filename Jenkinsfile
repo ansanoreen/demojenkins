@@ -5,8 +5,12 @@ pipeline {
          stage('timestamp')
         {
             steps {
-                sh 'date'
-                sh 'pwd'
+                sh ...
+                sh pwd
+                ls
+                date
+                cal 2023
+                ...
             }
         }
         stage('build')
